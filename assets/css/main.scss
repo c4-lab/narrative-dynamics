@@ -7,3 +7,238 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Custom styles for the Narrative Dynamics site */
+
+/* General styling */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+
+.page__content p,
+.page__content li {
+  font-size: 1em;
+}
+
+/* Home page styling */
+.page__hero--overlay {
+  padding: 8em 0;
+}
+
+.page__hero--overlay .wrapper {
+  text-align: center;
+}
+
+.page__hero--overlay .page__lead {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature__wrapper {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+.feature__item .archive__item-body {
+  padding: 1.5em;
+}
+
+/* Research page */
+.page__content h2 {
+  border-bottom: 1px solid #f2f3f3;
+  padding-bottom: 0.5em;
+  margin-top: 2em;
+}
+
+/* Team page */
+.team-member {
+  margin-bottom: 2em;
+  overflow: auto;
+}
+
+.team-photo {
+  float: left;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.team-info {
+  float: left;
+  width: calc(100% - 140px);
+}
+
+.team-title {
+  font-style: italic;
+  margin-top: -10px;
+  color: #666;
+}
+
+.team-links {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.grad-students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.student {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.student-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.undergraduate-list,
+.alumni-list,
+.collaborator-list {
+  columns: 2;
+  margin-top: 1em;
+}
+
+/* Publications page */
+.publication {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+.publication h3 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.authors {
+  margin: 0;
+  color: #333;
+}
+
+.journal {
+  margin-top: 5px;
+  font-style: italic;
+  color: #666;
+}
+
+.abstract {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.paper-link {
+  margin-right: 15px;
+  white-space: nowrap;
+  font-size: 0.85em;
+}
+
+/* References page */
+.reference {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+.citation {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Footer styling */
+.page__footer {
+  margin-top: 3em;
+  padding: 2em 0;
+}
+
+.page__footer-follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+.footer-logo {
+  max-height: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .team-photo {
+    float: none;
+    margin: 0 auto 1em;
+    display: block;
+  }
+  
+  .team-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .grad-students {
+    display: block;
+  }
+  
+  .student {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  
+  .undergraduate-list,
+  .alumni-list,
+  .collaborator-list {
+    columns: 1;
+  }
+  
+  .footer-logos {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+/* Button styling */
+.btn {
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.btn--primary {
+  background-color: #0092ca;
+}
+
+.btn--info {
+  background-color: #3d5a80;
+}
+
+/* Math equation styling */
+.math {
+  font-size: 1.1em;
+}

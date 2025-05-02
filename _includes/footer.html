@@ -1,4 +1,9 @@
 <div class="page__footer-follow">
+  <div class="footer-logos">
+    <a href="https://www.nsf.gov/" target="_blank"><img src="{{ site.baseurl }}/assets/images/nsf-logo.png" alt="National Science Foundation" class="footer-logo"></a>
+    <a href="https://c4-lab.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/c4_logo_updated.png" alt="C4 Lab" class="footer-logo"></a>
+  </div>
+
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
@@ -18,4 +23,8 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">
+  <p>This research is supported by the National Science Foundation under grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1908407">#1908407</a>.</p>
+  <p>All content on this site is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a> unless otherwise noted.</p>
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</p>
+</div>

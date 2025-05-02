@@ -1,0 +1,50 @@
+<div class="coming-soon-section">
+  <div class="coming-soon-icon">
+    <i class="fas fa-tools"></i>
+  </div>
+  <div class="coming-soon-content">
+    <h3>{{ include.title | default: "Coming Soon" }}</h3>
+    <p>{{ include.message | default: "This section is currently under development. Please check back later for updates." }}</p>
+    {% if include.date %}
+    <p class="expected-date"><strong>Expected:</strong> {{ include.date }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+.coming-soon-section {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-left: 5px solid #0092ca;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.coming-soon-icon {
+  font-size: 2em;
+  color: #0092ca;
+  margin-right: 20px;
+}
+
+.coming-soon-content {
+  flex: 1;
+}
+
+.coming-soon-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0092ca;
+}
+
+.coming-soon-content p {
+  margin-bottom: 0;
+}
+
+.expected-date {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+</style>
